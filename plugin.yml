@@ -1,0 +1,29 @@
+name: SmartSpawn
+version: 1.0.0
+main: SmartSpawn\SmartSpawn
+api: 5.0.0
+description: A streamlined plugin for teleporting players to predefined spawn points in the configured world.
+author: Soltixik
+permissions:
+  smartspawn.spawn:
+    description: Allows players to teleport to the main spawn point of the configured world.
+    default: true
+  smartspawn.hub:
+    description: Allows players to teleport to the hub point of the configured world.
+    default: true
+  smartspawn.lobby:
+    description: Allows players to teleport to the lobby point of the configured world.
+    default: true
+commands:
+  spawn:
+    description: Teleports the player to the main spawn point of the configured world.
+    usage: /spawn
+    permission: smartspawn.spawn
+  hub:
+    description: Teleports the player to the hub point of the configured world.
+    usage: /hub
+    permission: smartspawn.hub
+  lobby:
+    description: Teleports the player to the lobby point of the configured world.
+    usage: /lobby
+    permission: smartspawn.lobby
